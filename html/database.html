@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c2e1ef9406.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <title>Pizza Database</title>
+  </head>
+  <body>
+    <header>
+      <h4>
+        <span class="pizza">🍕</span>Pizza Database<span class="pizza">🍕</span>
+      </h4>
+      <a href="./index.html"
+        ><img src="../assets/logout.png" style="margin-top: 0.9rem;"
+      /></a>
+    </header>
+    <div class="center">
+      <form class="pure-form">
+        <input
+          type="text"
+          id="userID"
+          placeholder="ID"
+          autocomplete="off"
+          readonly
+          class="disabled"
+        />
+        <input
+          type="text"
+          id="productName"
+          placeholder="Pizza Name"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="size"
+          placeholder="Size"
+          autocomplete="off"
+        />
+        <input type="text" id="price" placeholder="Price" autocomplete="off" />
+      </form>
+    </div>
+    <div class="center buttons">
+      <button class="buttonFancy green" id="btnCreate">Add 🍕</button>
+      <button class="buttonFancy yellow" id="btnRead">Fetch Data 🚚</button>
+      <button class="buttonFancy blue" id="btnUpdate">Update 📦</button>
+      <button class="buttonFancy red" id="btnDelete">Delete All 🗑️</button>
+    </div>
+    <div class="center">
+      <table class="pure-table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Pizza Name</th>
+            <th scope="col">Size</th>
+            <th scope="col">Price</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <footer>
+      <b>© 2023 Alex Romania</b>
+      <small>something something <s>I think</s> but I know for sure</small>
+      <b>All rights reserved</b>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <script src="/js/main.js" type="module"></script>
+  </body>
+</html>
