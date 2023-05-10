@@ -322,6 +322,9 @@ input {
   border-bottom: 2px solid rgb(0, 0, 0);
   width: 300px;
 }
+input::placeholder {
+  color: rgba(255, 41, 41, 0.811);
+}
 .disabled {
   background-color: rgba(128, 128, 128, 0.129);
 }
