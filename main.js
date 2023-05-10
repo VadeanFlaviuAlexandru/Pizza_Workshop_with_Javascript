@@ -1,8 +1,7 @@
 import productDB, { bulkCreate, getID, CreateElement } from "./module.js";
 
 let db = productDB("ProductDB", {
-  products: `++id, name, size, price`,
-  users: `++id,name,password`
+  products: `++id, name, size, price`
 });
 
 const userID = document.getElementById("userID");
