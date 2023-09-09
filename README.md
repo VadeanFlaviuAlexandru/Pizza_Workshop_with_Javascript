@@ -1,4 +1,4 @@
-The final assignment, a C.R.U.D. , I had to present while studying web development, but I wanted it to have its own repository.
+The final assignment, a colorful C.R.U.D. with log in and sign up, I had to present while studying web development, but I wanted it to have its own repository.
 
 Programs I used:
   - Javascript
